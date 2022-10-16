@@ -1,0 +1,242 @@
+/* Головні стилі */
+:root {
+    --primary-gray-color: #212121;
+    --accent-text-color: #2196F3;
+    --paragraph-text-color: #757575;
+    --title-white-color: #FFFFFF;
+    --bcg-color-gray: #2F303A;
+    --secong-bcg-color: #F5F5F5;
+    --logo-black-color: #000000;
+    --third-bcg-color: #F5F4FA;
+    --button-bcg-color: #188CE8;
+    --footer-links-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+    color: var(--primary-gray-color);
+    background-color: var(--title-white-color);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Стилі для шапки сайту */
+
+.logo-link {
+    color: var(--accent-text-color);
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo-header {
+    color: var(--logo-black-color);
+}
+
+.logo-link:hover,
+.logo-link:focus {
+    color: var(--accent-text-color);
+}
+
+/* Навігація */
+
+.header-nav .link.current {
+    color: var(--accent-text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+.header-nav .link {
+    color: var(--primary-gray-color);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.header-nav .link:hover,
+.header-nav .link:focus {
+    color: var(--accent-text-color);
+}
+
+.contacts-list .link {
+    color: var(--paragraph-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+    color: var(--accent-text-color);
+}
+/* Герой */
+
+.hero {
+    background-color: var(--bcg-color-gray);
+    color: var(--title-white-color);
+}
+
+.hero-title {
+    font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+/* Кнопка */
+
+.button {
+    background-color: var(--accent-text-color);
+    color: var(--title-white-color);
+    font-weight: 700;
+        font-size: 16px;
+        line-height: 1.9;
+        align-items: center;
+        text-align: center;
+        font-family: inherit;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--button-bcg-color);
+}
+
+/* Особливості і команда */
+
+.feature-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.feature-list .text {
+    color: var(--paragraph-text-color);
+        line-height: 1.7;
+        }
+        
+        /* Наша робота */
+        
+        .section-title {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.16;
+            text-align: center;
+}
+
+/* Команда */
+
+.team {
+    background-color: var(--third-bcg-color);
+}
+
+.team-item {
+    background-color: var(--title-white-color);
+}
+.team-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+
+.team-list .text {
+    color: var(--paragraph-text-color);
+        font-size: 16px;
+            line-height: 1.18;
+            text-align: center;
+}
+/* Портфолiо сайту */
+
+.list-of-buttons .btn {
+    background-color: var(--third-bcg-color);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.list-of-buttons .btn:hover,
+.list-of-buttons .btn:focus {
+    color: var(--title-white-color);
+    background-color: var(--accent-text-color);
+}
+
+.projects .project-link {
+    text-decoration: none;
+}
+.projects .project-title {
+    color: var(--primary-gray-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.projects .project-item {
+    color: var(--paragraph-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+/* Футер */
+
+.footer {
+    background-color: var(--bcg-color-gray);
+}
+
+.footer .logo-header {
+    color: var(--title-white-color);
+}
+.footer .link-adress {
+    color: var(--title-white-color);
+    text-decoration: none;
+    line-height: 1.71;
+}
+
+.footer .link-adress:hover,
+.footer .link-adress:focus {
+    color: var(--accent-text-color)
+}
+
+.footer .link {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--footer-links-color);
+}
+.pane {
+    display: none;
+    padding: 8px;
+    border: 1px solid blue;
+    border-radius: 3px;
+}
+
+.is-active {
+    display: block;
+}
