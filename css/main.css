@@ -58,6 +58,7 @@ img {
 /* Стилі для шапки сайту */
 
 .logo-link {
+    padding-left: 40px;
     color: var(--accent-text-color);
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
