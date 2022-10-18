@@ -25,9 +25,12 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+ul,
+p {
     margin-top: 0;
     margin-bottom: 0;
+    padding-left: 0px;
 }
 
 img {
@@ -62,7 +65,6 @@ img {
 /* Стилі для шапки сайту */
 
 .logo-link {
-    padding-left: 40px;
     color: var(--accent-text-color);
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
@@ -158,6 +160,8 @@ padding-top: 200px;
 }
 
 .hero-title {
+    max-width: 696px;
+        margin: 0px auto;
         margin-bottom: 30px;
     font-weight: 900;
         font-size: 44px;
@@ -190,9 +194,13 @@ padding-top: 200px;
 
 /* Особливості */
 
+.section.feature {
+    padding-bottom: 47px;
+}
 .feature-list {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+        flex-basis: calc(100% / 4 - 30px);
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -211,11 +219,15 @@ margin-bottom: 10px;
 
 .feature-list .text {
     color: var(--paragraph-text-color);
+        min-width: 270px;
         line-height: 1.7;
         }
         
 /* Чим ми займаємося */
 
+.section.work {
+    padding-top: 47px;
+}
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -253,7 +265,7 @@ margin-bottom: 10px;
 }
 
 .section-title.team {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .team-item {
     background-color: var(--title-white-color);
@@ -265,7 +277,7 @@ margin-bottom: 10px;
 }
 
 .team-style {
-    margin-top: 30px;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -278,7 +290,6 @@ margin-bottom: 10px;
 /* Портфолiо сайту */
 
 .list-of-buttons {
-    margin-top: 94px;
     margin-bottom: 50px;
 
     display: flex;
@@ -335,6 +346,7 @@ margin-bottom: 10px;
     text-decoration: none;
 }
 .projects .project-title {
+margin-bottom: 4px;
     color: var(--primary-gray-color);
     font-weight: 700;
     font-size: 18px;
@@ -342,12 +354,11 @@ margin-bottom: 10px;
     letter-spacing: 0.06em;
 }
 
-.card {
-    border-bottom: 1px solid #EEEEEE;
-}
-
 .card-content {
     padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+        border-left: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
 }
 .projects .project-item {
     color: var(--paragraph-text-color);
@@ -362,14 +373,12 @@ margin-bottom: 10px;
         padding-bottom: 60px;
     background-color: var(--bcg-color-gray);
 }
+
     .contacts-style {
         margin-top: 20px;
         margin-left: auto;
-    }
-    
-    .footer .logo-link {
-        padding-left: 40px;
-}
+        font-style: normal;
+        }
 
 .footer .logo-header {
     color: var(--title-white-color);
@@ -403,5 +412,5 @@ margin-bottom: 10px;
 }
 
 .item-style:not(:last-child) {
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
